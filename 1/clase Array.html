@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* function cargar(sueldos){
+             var f;
+             for(f=0;f<sueldos.length;f++){
+                 var v;
+                 v=prompt('Ingrese el sueldo:', '');
+                 sueldos[f]=parseInt(v);
+             }
+         }
+         
+         function calcularGastos(sueldos){
+             var total=0;
+             var f;
+             for(f=0;f<sueldos.length;f++){
+                 total=total+sueldos[f];
+             }
+             document.write('Listado de sueldos<br>');
+             for(f=0;f<sueldos.length;f++){
+             document.write(sueldos[f]+'<br>');
+             }
+             document.write('Total de gastos en sueldos: '+total);
+         }
+         var sueldos;
+         sueldos=new Array(5);
+         cargar(sueldos);
+         calcularGastos(sueldos);*/
+
+  /*      function mostrarFecha(meses, dias) {
+            var num;
+            num = parseInt(prompt('Ingrese el nùmero del mes: ', ''));
+            document.write('Corresponde al mes: ' + meses[num - 1]);
+            document.write('<br>Tiene ' + dias[num - 1] + ' dìas');
+        }
+        var meses;
+        meses = new Array(12);
+        meses[0] = 'Enero';
+        meses[1] = 'Febrero';
+        meses[2] = 'Marzo';
+        meses[3] = 'Abril';
+        meses[4] = 'Mayo';
+        meses[5] = 'Junio';
+        meses[6] = 'Julio';
+        meses[7] = 'Agosto';
+        meses[8] = 'Septiembre';
+        meses[9] = 'Octubre';
+        meses[10] = 'Noviembre';
+        meses[11] = 'Diciembre';
+
+        var dias;
+        dias = new Array(12);
+        dias[0] = 31;
+        dias[1] = 28;
+        dias[2] = 31;
+        dias[3] = 30;
+        dias[4] = 31;
+        dias[5] = 30;
+        dias[6] = 31;
+        dias[7] = 31;
+        dias[8] = 30;
+        dias[9] = 31;
+        dias[10] = 30;
+        dias[11] = 31;
+
+        mostrarFecha(meses, dias);
+*/
+
+        //otro ejemplo
+        function ingreso(num){
+            var i;
+            for(i=0;i<num.length;i++){
+                var x;
+                x=prompt('Ingrese el elemento', '');
+                num[i]=parseInt(x);
+
+            }
+        }
+        function acumular(num){
+            var i;
+            var acum=0;
+            for(i=0;i<num.length;i++){
+                
+                acum=acum+num[i];
+            }
+            document.write('El valor acumulado es: '+acum);
+        }
+        function acumularMayores36(num){
+            var i;
+            var acum=0;
+            for(i=0;i<num.length;i++){
+                if(num[i]>36){
+                    acum=acum+num[i];
+                }
+                
+        }
+        document.write('El valor acumulado es: '+acum);
+    }
+    function acumularMayores50(num){
+            var i;
+            var acum=0;
+            for(i=0;i<num.length;i++){
+                if(num[i]>50){
+                    acum=acum+num[i];
+                }
+                
+        }
+        document.write('El valor acumulado es: '+acum);
+    }
+        var num;
+        num = new Array(4);
+        ingreso(num);
+        //acumular(num)
+        //acumularMayores36(num)
+        acumularMayores50(num);
+
+    </script>
+</body>
+
+</html>

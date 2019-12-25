@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var valor;
+        do{
+            valor=parseInt(prompt('Ingrese un numero entre 0 y 999: ', ''));
+            if(valor<10){
+                document.write('El numero posee un dìgito');
+            }else {
+                if(valor<100){
+                document.write('El numero posee dos digitos');
+                }else{
+                    document.write('El numero posee tres dìgitos');
+                }
+        }
+        document.write('<br>');
+        } while(valor != 0);
+
+    </script>
+</body>
+</html>
