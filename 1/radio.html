@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function mostrarSeleccionado(){
+        if(document.getElementById('radio1').checked){
+            alert('no tiene estudios');
+        }
+        if(document.getElementById('radio2').checked){
+            alert('tiene estudios primarios');
+        }
+        if(document.getElementById('radio3').checked){
+            alert('tiene estudios secundarios');
+        }
+        if(document.getElementById('radio4').checked){
+            alert('tiene estudios universitarios');
+        }
+    }
+    </script>
+    <form>
+        <input type="radio" id="radio1" name="estudios">Sin estudios
+        <br>
+        <input type="radio" id="radio2" name="estudios">Estudios primarios
+        <br>
+        <input type="radio" id="radio3" name="estudios">Estudios secundarios
+        <br>
+        <input type="radio" id="radio4" name="estudios">Estudios universitarios
+        <br>
+        <input type="button" value="Mostrar" onclick="mostrarSeleccionado()">
+    </form>
+</body>
+</html>

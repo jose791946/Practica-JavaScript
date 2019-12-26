@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <script>
+    function mostrar(){
+        var nom=document.getElementById('nombre').value;
+        var ed=document.getElementById('edad').value;
+        alert('Ingreso el nombre: '+nom)
+        alert('La edad ingresada es: '+ed);   
+    }
+    </script>
+
+    <form>
+        Ingrese su nombre:
+        <input type="text" id="nombre"><br>
+        Ingrese su edad:
+        <input type="text" id="edad"><br>
+        <input type="button" value="Confirmar" onclick="mostrar ()">
+    </form>
+   
+    <script>
+    //ejemplo para mostrar el cubo
+    function mostrarValor(){
+        var num=document.getElementById('numero').value;
+        num=parseInt(num);
+        var cubo=num*num*num;
+        alert('El nùmero elevado al cubo es: '+cubo);
+    }
+    </script>
+    <form>
+        Ingrese un número: 
+        <input type="text" id="numero">
+        <br>
+        <input type="button" value="Calcular el cubo" onclick="mostrarValor()">
+    </form>
+     
+     <script>
+     //ejemplo para mostrar el mayor de dos numeros
+     function mostrarMayor(){
+         var num1=document.getElementById('numero1').value;
+         var num2=document.getElementById('numero2').value;
+         num1=parseInt(num1);
+         num2=parseInt(num2);
+         if(num1 > num2){
+             alert('El mayor de los numeros es '+num1)
+         }else{
+             alert('El mayor de los numeros es '+num2)
+         }
+     }
+     </script>
+     <form>
+         Ingrese el primer numero:
+         <input type="text" id="numero1"><br>
+         Ingrese el segundo número:
+         <input type="text" id="numero2"><br>
+         <input type="button" value="mostrar mayor" onclick="mostrarMayor()">
+     </form>
+     -->
+     <script>
+
+     //ejemplo concatenar textos
+     function concatenar(){
+         var nom=document.getElementById('nombre').value;
+         var ape=document.getElementById('apellido').value;
+         document.getElementById('resultado').value=nom+' '+ape;
+     }
+     </script>
+     <form>
+         Ingrese el nombre:
+         <input type="text" id="nombre"><br>
+         Ingrese el apellido:
+         <input type="text" id="apellido"><br>
+         <input type="button" value="Concatenar datos ingresados" onclick="concatenar()"><br>
+         Resultado:
+         <input type="text" id="resultado">
+     </form>
+</body>
+</html>

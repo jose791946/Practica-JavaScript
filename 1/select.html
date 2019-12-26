@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script>
+    function cambiarColor (){
+        var seleccion=document.getElementById('select1');
+        document.getElementById('text1').value=seleccion.selectedIndex+1;
+        document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+        document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+
+    }
+    </script>
+    <form>
+        <select id="select1" onChange="cambiarColor ()">
+            <option value="ff0000">Rojo</option>
+            <option value="00ff00">Verde</option>
+            <option value="0000ff">Azul</option>
+        </select>
+        <br>
+        Número de índice seleccionado del objeto SELECT: <input type="text" id="text1"><br>
+        Texto seleccionado: <input type="text" id="text2"><br>
+        Valor asociado: <input type="text" id="text3"><br>
+    </form>
+    <script>
+        //ejemplo de pizza
+    function pizza(){
+        var seleccion=document.getElementById('select1');
+        document.getElementById('text1').value=seleccion.options[seleccion.selectedIndex].value;
+    }
+    </script> 
+    <form>
+        <select id="select1" onChange="pizza()">
+            <option value="$100">Común</option>
+            <option value="$122">Especial</option>
+            <option value="$123">Muzzarella</option>
+            <option value="$124">Morron</option>
+        </select>
+        El precio es: <input type="text" id="text1">
+
+    </form>
+    <script>
+
+        function procesador(){
+        var seleccion1=document.getElementById('select1');
+        var monto1=document.getElementById('text1').value=seleccion1.options[seleccion1.selectedIndex].value;
+        monto1=parseInt(monto1);
+        var seleccion2=document.getElementById('select2');
+        var monto2=document.getElementById('text2').value=seleccion2.options[seleccion2.selectedIndex].value;
+        monto2=parseInt(monto2);
+        var seleccion3=document.getElementById('select3');
+        var monto3=document.getElementById('text3').value=seleccion3.options[seleccion3.selectedIndex].value;
+        monto3=parseInt(monto3);
+        var sum=monto1+monto2+monto3;
+        document.getElementById('resultado').value=sum;
+        }
+       
+    </script>
+    <form>
+        <select id="select1" onchange="procesador()">
+            <option value="400">Intel i3</option>
+            <option value="600">Intel i5</option>
+            <option value="800">Intel i7</option>
+        </select>
+        El precio del procesador es: <input type="text" id="text1">
+    <br><br>
+        <select id="select2" onchange="procesador()">
+            <option value="250">Samsung 20"</option>
+            <option value="350">Samsung 22"</option>
+            <option value="550">Samsung 25"</option>
+        </select>
+        El precio del monitor es: <input type="text" id="text2">
+    <br><br>
+        <select id="select3" onchange="procesador()">
+            <option value="300">500 GB</option>
+            <option value="440">1 TB</option>
+            <option value="500">2 TB</option>
+        </select>
+        El precio del disco es: <input type="text" id="text3">
+    <br><br>
+    <input type="button" value="Calcular Presupuesto" onclick="procesador()">
+    <input type="text" id="resultado">
+</form>-->
+<script>
+//ejemplo de precio de pizza con porciones
+function calcularPrecio(){
+    var precio=document.getElementById('pizza').value;
+    precio=parseInt(precio);
+    var cantidad=document.getElementById('cantidad').value;
+    cantidad=parseInt(cantidad);
+    var total=precio*cantidad;
+    document.getElementById('resultado').value=total;
+}
+</script>
+<form>
+    Sleccione la pizza:
+    <select id="pizza">
+        <option value="4">Queso</option>
+        <option value="6">Jamon y Queso</option>
+        <option value="10">Especial</option>
+    </select><br>
+    Cantidad de Pizzas:
+    <input type="text" id="cantidad"><br>
+    <input type="button" value="Calcular Precio" onclick="calcularPrecio()"><br>
+    <input type="text" id="resultado">
+</form>
+</body>
+</html>
