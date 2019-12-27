@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+    //onmouseover es cuando pasamos la felcha del mouse sobre un elemento hacemos foco
+    //onmouseout es cuando la flecha abandona
+    /*function pintar(col){
+        document.getElementById('cuadrado1').style.backgroundColor=col;
+    }*/
+    function pintar2(objeto,col){
+        objeto.style.backgroundColor=col;
+    }
+    </script>
+
+<!--    <a href="#" onmouseover="pintar('#f00')" onmouseout="pintar('#000')">Rojo</a>
+    <a href="#" onmouseover="pintar('#0f0')" onmouseout="pintar('#000')">Verde</a>
+    <a href="#" onmouseover="pintar('#00f')" onmouseout="pintar('#000')">Azul</a>
+    <div id="cuadrado1" style="background:#000;width:200px;height:200px"></div>
+-->
+    <table border="1">
+        <tr>
+            <td onmouseover="pintar2(this,'#f00')" onmouseout="pintar2(this,'#fff')">Rojo</td>
+            <td onmouseover="pintar2(this,'#0f0')" onmouseout="pintar2(this,'#fff')">Verde</td>
+            <td onmouseover="pintar2(this,'#00f')" onmouseout="pintar2(this,'#fff')">Azul</td>
+        </tr>
+    </table>
+</body>
+</html>

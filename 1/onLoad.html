@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="activarPrimerControl()">
+    <script>
+        //al iniciar una pagina posiciona el foco directamente sobre un elemento.
+    function activarPrimerControl(){
+        alert('Antes de guardar los cambios verifique los datos');
+        document.getElementById('nombre').focus();
+    }
+    </script>
+    <form>
+        Ingrese su nombre:
+        <input type="text" id="nombre"><br>
+        Ingrese su edad:
+        <input type="text" id="edad"><br>
+        <input type="button" value="Confirmar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <script>
+    function vaciar(control){
+        control.value='';
+    }
+    function verificarEntrada(control){
+        if(control.value==''){
+            alert('Debe ingresar datos');
+        }
+    }
+    </script>
+    <form>
+        <input type="text" id="nombre" onfocus="vaciar(this)" 
+                onblur="verificar(this)" value="nombre"><br>
+        <input type="text" id="edad" onfocus="vaciar(this)"
+                onblur="verificarEntrada(this)" value="mail"><br>
+        <input type="button" value="confirmar">
+    </form>-->
+    <script>
+        function vaciar(control){
+        control.value='';
+    }
+    function verificarEntrada(possword){
+        if(possword.value.length>20){
+            alert('La clave debe contener menos de 20 caracteres');
+        }else if(possword.value.length<7){
+            alert('La clave debe contener más de 7 caracteres');
+        }else if(possword.value==''){
+            alert('Debe ingresar datos');
+        }else{
+            alert('La clave ingresada cumple con los requisitos');
+        }
+    }
+    function verificarEntradaNom(nom){
+        if(nom.value==''){
+            alert('Debe ingresar datos');
+    }
+    }
+    </script>
+    <form>
+        <input type="text" id="nombre" onfocus="vaciar(this)" 
+            onblur="verificarEntradaNom(this)" value="Ingrese el nombre"><br>
+        <input type="password" id="possword" onfocus="vaciar(this)"
+            onblur="verificarEntrada(this)" value="Ingrese la Contraseña"><br>
+       <input type="button" value="Confirmar">     
+    </form>
+</body>
+</html>
