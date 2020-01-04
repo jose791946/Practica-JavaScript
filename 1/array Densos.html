@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vec=[];
+        var valor;
+        var indice=0;
+        do{
+            valor=parseInt(prompt('Ingrese un valor entero (o para salir): ', ''));
+            if(valor!=0){
+                vec[indice]=valor;
+                indice++;
+            }
+        }while (valor!=0);
+        var f;
+        var suma=0;
+        for(f=0; f<vec.length; f++){
+            suma=suma+vec[f];
+        }
+        document.write('Se ingresaron '+vec.length+' valores<br>');
+        document.write('La suma de los valores ingresados es: '+suma);
+
+    </script>
+</body>
+</html>

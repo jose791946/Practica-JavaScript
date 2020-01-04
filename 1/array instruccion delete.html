@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Javascript tiene una instrucción que permite eliminar
+    un elemento de un vector llamada delete.
+    Al comando delete le pasamos el nombre del vector y la 
+    posición que queremos borrar:delete vec[3];
+    Con el comando anterior estamos eliminando la componente
+    de la posición 3 del vector. Cuando se elimina una componente 
+    no se modifica la propiedad length y el vector se convierte en 
+    no denso. Si luego tratamos de acceder a dicha posición el 
+    resultado es el valor undefined.
+    */
+    var vec=[];
+    var f;
+    for(f=0; f<10; f++){
+        var valor = parseInt(Math.random()*1000);
+        vec. push(valor);
+    }
+    document.write('Vector antes de borrar<br>');
+    for(f=0; f<10; f++){
+        document.write('Posiciòn '+f+' '+vec[f]+' <br>')
+    }
+    for(f=0; f<10; f=f+2){
+        delete vec[f];
+    }
+    document.write('Vector luego de borra las posiciones pares <br>');
+    for(f=0; f<10; f++){
+        document.write('Posiciòn '+f+' '+vec[f] + '<br>');
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Otro mètodo muy ùtil de la clase Array es sort. La sintaxis mas sencilla
+        //y por defecto es para ordenar una lista de string.
+        /*var nombres=['Marcos', 'Ana', 'Luis', 'Jorge', 'Carlos'];
+        var f;
+        document.write('Vector antes de ordenarlo<br>');
+        for(f=0; f<nombres.length; f++){
+            document.write(nombres[f]+'<br>');
+        }
+        nombres.sort();
+        document.write('Vector despues de ordenarlos<br>');
+        for(f=0; f<nombres.length; f++){
+            document.write(nombres[f]+'<br>');
+        }*/
+
+        //Para ordenar una lista de enteros se complica el algoritmo ya que debemos
+        //pasar al método sort una función anónima indicando como implementar la
+        //comparación entre elementos:
+
+        /*var vec=[100, 5, 60, 3, 90];
+        var f;
+        document.write('Vector antes de ordenarlo<br>');
+        for(f=0; f<vec.length; f++){
+            document.write(vec[f]+'<br>');
+        }
+        vec.sort(function(v1, v2){
+            if(v1>v2){
+                return 1;
+            }else{
+                return 0;
+            }
+        });
+        document.write('Vector despuès de ordenarlo<br>');
+        for(f=0; f<vec.length; f++){
+            document.write(vec[f]+'<br>');
+        }*/
+        //no salio
+        var vec=new Array(10);
+  var f;
+  for(f=0;f<vec.length;f++)
+  {
+    vec[f]=parseInt(Math.random()*1000);
+  }
+  vec.sort(function(v1,v2) {
+    if (v1>v2)
+      return 1;
+    else
+      return 0;
+  });
+  document.write('Vector ordenado en forma ascendente<br>');
+  for(f=0;f<vec.length;f++)
+  {
+    document.write(vec[f]+'<br>');
+  }
+  vec.reverse();
+  document.write('Vector ordenado en forma descendente<br>');
+  for(f=0;f<vec.length;f++)
+  {
+    document.write(vec[f]+'<br>');
+  }
+    </script>
+</body>
+</html>

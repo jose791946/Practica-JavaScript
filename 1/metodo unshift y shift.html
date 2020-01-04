@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //método unshift inserta un elemento al 
+        //principio del vector y desplaza el resto una posición
+        
+        //El método shift extrae el primer elemento del vector
+        //y desplaza hacia delante el resto de elementos del vector.
+        var vec=[];
+        var f;
+        var valor;
+        do{
+            valor=parseInt(prompt('Ingrese un valor (0 para finalizar): ', ''));
+            if (valor<100){
+                vec.unshift(valor);
+            }else{
+                vec.push(valor);
+            }
+        }while(valor!=0);
+        vec.shift();
+        for(f=0; f<vec.length; f++){
+            document.write(vec[f]+'<br>');
+        }
+    </script>
+</body>
+</html>
