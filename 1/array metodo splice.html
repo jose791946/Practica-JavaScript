@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*borarr elementos: Para borrar elementos debemos indicar 
+        dos parámetros al método splice, el primero indica a partir
+         de que posición procedemos a borrar componentes y el segundo
+         parámetro indica la cantidad de componentes a borrar.*/
+        
+        /* var vec = [0,1,2,3,4,5,6,7,8,9];
+         document.write('Vector inicial<br>');
+         var f;
+         for(f=0; f<vec.length; f++){
+             document.write(vec[f]+'<br>');
+         }  
+         vec.splice(1,3);
+         document.write('Vector luego de borrar<br>');
+         
+         for(f=0; f<vec.length; f++){
+             document.write(vec[f]+'<br>');
+         }  */
+         //Tambien el método splice retorna un vector con los elementos borrados,
+         //luego si queremos podemos guardar esa referencia:
+         
+         /*var vec = [0,1,2,3,4,5,6,7,8,9];
+         document.write('Vector inicial<br>');
+         var f;
+         for(f=0; f<vec.length; f++){
+             document.write(vec[f]+'<br>');
+         }  
+         var vec2 = vec.splice(1,3);
+         document.write('Elementos extraidos del vector<br>');
+         
+         for(f=0; f<vec2.length; f++){
+             document.write(vec2[f]+'<br>');
+         }*/
+         /*Podemos indicar un valor negativo y el posicionamiento se cuenta desde el
+         final del vector, por ejemplo si queremos eliminar los dos últimos elementos
+         del vector luego debemos codificar:*/
+        /*var vec=[0,1,2,3,4,5,6,7,8,9];
+        document.write('Vector inicial<br>');
+        var f;
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }
+        vec.splice(-2,2);
+        document.write('Eliminados los dos ùltimos elementos <br>');
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }*/
+        /*Insertar: para insertar valores dentro del vector, debemos pasar
+        como mìnimo 3 o màs parámetros. Los dos primero cumplen la misma función
+        que cuando borramos(pero en este caso pasamos un cero en el segundo)
+        parámetro) y del tercer marámetro en adelante se indica los valores a insertar.*/
+
+       /* var vec=[0,1,2,3,4,5,6,7,8,9];
+        document.write('Vector incial<br>');
+        var f;
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }
+        vec.splice(5,0,10,20,30,40);
+        document.write('Vector luego de insertar 4 valores<br>');
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }*/
+
+        /*Borrar e Insertar: en el mismo momento que borramos elementos procedemos a insertar otros.*/
+
+        var vec=[0,1,2,3,4,5,6,7,8,9];
+        document.write('Vector inicial<br>');
+        var f;
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }
+        vec.splice(1,3,10,20,30,40,50);
+        document.write('Vector luego de borrar 3 elementos e insertar otros 5 valores <br>');
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'<br>');
+        }
+
+
+    </script>
+</body>
+</html>
