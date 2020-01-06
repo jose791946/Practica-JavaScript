@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vec=[10,20,30,40];
+        var vecNew=vec.concat(1,2,3);
+        document.write('Vector origen: <br>');
+        document.write(vec.join()+'<br>');
+        document.write('Vector Generado: <br>');
+        document.write(vecNew.join()+'<br><br>');
+        //otro ejemplo
+        var vec1=[10,20,30,40];
+        var vec2=[100,200,300,400];
+        var vecSuma=vec1.concat (vec2);
+        document.write('Primer Vector: <br>');
+        document.write(vec1.join()+'<br><br>');
+        document.write('Segundo Vector: <br>');
+        document.write(vec2.join()+'<br>');
+        document.write('Vector Concatenado: <br>');
+        document.write(vecSuma.join()+'<br><br>');
+    </script>
+</body>
+</html>

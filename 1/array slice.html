@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*El método slice (traducido al castellano: trozo) retorna un trozo del vector
+        La sintaxis es: vec.slice(2,4). El primer parámetro indica a partir de que elementos debe retornar y el segundo
+        parámetro hasta cual elemento (sin incluir dicha posición)
+        El método slice no modifica el vector original, sino que retorna otro vector con las componentes indicadas.*/
+
+        var vec=[10,20,30,40,50,60];
+        document.write('Vector original<br>');
+        var f;
+        for(f=0;f<vec.length;f++){
+            document.write(vec[f]+'-');
+        }
+        document.write('<br>');
+        var vec2=vec.slice(1,4);
+        document.write('Vector resultante de la llamada a slice<br>');
+        for(f=0;f<vec2.length;f++){
+            document.write(vec2[f]+'-');
+        }
+        document.write('<br>');
+        document.write('<br>');
+        //Otras variantes:
+        //Si queremos extraer desde una determinada posición hasta el final del vector debemos llamar 
+        //al método slice con un solo parámetro:
+        var vec=[10,20,30,40,50,60];
+        var vec3=vec.slice(2);
+        for(f=0;f<vec3.length;f++){
+            document.write(vec3[f]+'-');
+        }
+        //Si queremos indicar una posición pero comenzando desde el final del
+        //vector debemos indicar un valor negativo en el primer parámetro:
+        document.write('<br>');
+        document.write('<br>');
+        var vec=[10,20,30,40,50,60];
+        var vec4=vec.slice(-2);
+        for(f=0;f<vec4.length;f++){
+            document.write(vec4[f]+'-');
+        }
+        //También podemos indicar el segundo parámetro:
+        document.write('<br>');
+        document.write('<br>');
+        var vec=[10,20,30,40,50,60];
+        var vec5=vec.slice(-3,-1);
+        for(f=0;f<vec5.length;f++){
+            document.write(vec5[f]+'-');
+        }
+        //Por último podemos indicar el primer parámetro un valor positivo y el
+        //segundo un valor negativo indicando una posición desde el final
+        document.write('<br>');
+        document.write('<br>');
+        var vec=[10,20,30,40,50,60];
+        var vec6=vec.slice(1,-1);
+        for(f=0;f<vec6.length;f++){
+            document.write(vec6[f]+'-');
+        }
+    </script>
+</body>
+</html>
